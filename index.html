@@ -27,7 +27,7 @@
   return (
     <section>
     <header>
-        <h1 className="center">Sally's Resume </h1>
+        <h1 className="center">{resume.name}</h1>
         <img src="https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fcdn-media.extratv.com%2F2015%2F10%2F02%2Femilia-clarke-380x447.jpg&f=1"alt="A picture of Sally"/>
     </header>
     <main>
@@ -53,7 +53,7 @@
     </section>
     <address>
     <ul>
-      <li>Name: Sally Anderson <br/></li>
+      <li>Name: {resume.name} <br/></li>
       <li><a href="mailto:sallyanderson@gmail.com">Email</a></li>
       <li>Phone number: (510)439-8909</li>
     </ul>
@@ -64,7 +64,9 @@
 }
 
 ReactDOM.render(
-  <App />,
+  <App  
+    name="Sally Anderson"
+  />,
 
   document.querySelector('#application-root')
 );
