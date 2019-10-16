@@ -1,1 +1,75 @@
-Hello
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sally's React Resume</title>
+</head>
+<body>
+  <div id="application-root"></div>
+
+  <script
+  src="https://unpkg.com/react@16/umd/react.development.js">
+  </script>
+
+  <script
+  src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+  </script>
+
+  <script
+  src="https://unpkg.com/babel-standalone@6/babel.min.js">
+  </script>
+
+  <script type="text/babel">
+ 
+
+  function App(resume) {
+  console.log(resume)
+  return (
+    <section>
+    <header>
+        <h1 className="center">Sally's Resume </h1>
+        <img src="https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fcdn-media.extratv.com%2F2015%2F10%2F02%2Femilia-clarke-380x447.jpg&f=1"alt="A picture of Sally"/>
+    </header>
+    <main>
+     <h2>Employment History</h2>
+        <dl>
+         <dt>Target</dt>
+         <dd>Cashier</dd>
+         <dd>Worked from 2/13/13 - 5/25/15</dd>
+         <p className="tab">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+        <dt>Tacos El Gordo</dt>
+        <dd>Taco Preparer </dd>
+        <dd>Started on 2/3/16 - current </dd>
+        <p className="tab">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+        </dl>
+    <h2>Educational History</h2>
+      <ul>
+        <li>Beverly Hills High School </li>
+        <li>University Of Southern California</li>
+      </ul>
+    </main>  
+    <section>
+    <h3>Contact Information</h3>
+    </section>
+    <address>
+    <ul>
+      <li>Name: Sally Anderson <br/></li>
+      <li><a href="mailto:sallyanderson@gmail.com">Email</a></li>
+      <li>Phone number: (510)439-8909</li>
+    </ul>
+   </address>
+  </section>
+
+  );
+}
+
+ReactDOM.render(
+  <App />,
+
+  document.querySelector('#application-root')
+);
+   
+
+  </script>
+</body>
+</html>
